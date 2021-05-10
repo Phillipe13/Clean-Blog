@@ -10,7 +10,7 @@ app.listen(4000, () => {
 })
 
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'pages/index.html'))
+    res.render('index')
 })
 
 app.get('/about', (req, res) => {
